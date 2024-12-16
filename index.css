@@ -1,0 +1,272 @@
+*{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+header{
+  position: fixed;
+  top: 0;               
+  left: 0;              
+  width: 100%;         
+  z-index: 1000; 
+  /* border-bottom: 1px solid #a09999;
+  border-radius: 3px; */
+}
+.header_js.shrink {
+  height: 50px; 
+}
+
+.logo {
+  height: 60px; 
+  transition: height 0.3s, width 0.3s; 
+}
+
+.header_js.shrink .logo-img {
+  height: 30px; 
+}
+
+.logo-img{
+  width: 100%;
+  height: 10vh
+}
+.content_list{
+  font-weight: 600;
+}
+
+.video_banner{
+  width: 100%;
+  /* border-bottom: 1px solid #a09999;
+  border-radius: 3px;
+  margin-top: 3pc; */
+
+}
+.video_banner_sec{
+  background-color: white;
+  padding-top: 6pc;
+}
+.Navbar_header{
+  border-bottom: 1px solid #e5e5e5;
+
+}
+
+
+.side_content{
+  font-weight: 500;
+  font-size: larger;
+  padding: 10px;
+}
+.first_card{
+  width: 100%;
+  border-radius: 0px;
+  background-color: #d6d6d6;
+  border: none;
+}
+.first_card-body{
+  font-family: Arial, sans-serif;
+  background-color: #1fe089;
+}
+
+.first_card-title {
+  font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 600;
+  font-variant: small-caps;
+  font-size: 36px;
+  color: #12876F !important;
+ 
+}
+
+.scroll-box {
+  width: 100%;
+  height: 26pc; 
+  overflow: hidden;
+  
+  position: relative;
+ 
+ 
+}
+
+.scroll-content {
+  position: relative;
+  animation: scroll 30s linear infinite; 
+}
+
+.content {
+  padding: 10px;
+  box-sizing: border-box;
+  /* justify-content: center; */
+ 
+  width: 100%;
+
+}
+
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+.content_sec{
+  background-color: #d6d6d6;
+  /* padding-bottom: -10px; */
+}
+.view_btn{
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+/* .view_btn_cont{
+  background-color: #d6d6d6;
+  color: #12876E;
+  padding: 10px;
+  height: 3pc;
+  width: 7pc;
+font-size: larger;
+padding: 10px;
+
+animation-name: maya;
+animation-duration: 4s;
+
+
+} */
+
+/* .view_btn_cont:hover{
+background-color: #c9c9c9;
+width: 8pc;
+border: none;
+color: #12876E;
+font-size: 20px;
+
+  
+} */
+.view_btn .view_btn_cont img{
+
+  opacity: 0;
+  filter: blur(5px);
+  width: 0; 
+  transition: opacity 0.5s ease-in-out, filter 0.5s ease-in-out, width 0.5s ease-in-out; 
+  margin-left: 10px; 
+  overflow: hidden; 
+  color: #12876F !important;
+
+ }
+ .view_btn .view_btn_cont:hover img{
+
+  opacity: 1; 
+  filter: blur(0); 
+  width: 20px; 
+  color: #12876F !important;
+
+ }
+
+
+.view_btn_cont{
+  background-color: #d6d6d6 !important;
+ font-size: larger;
+}
+
+
+
+
+.other_section{
+  background-color: #e06100;
+ 
+}
+.other_section_cont{
+margin-top: 3pc;
+margin-bottom: 5pcc;
+}
+
+.os_btn1 .btn-primary {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+
+  border-radius: 8px;
+  background-color: #007bff; 
+  color: white; 
+  font-weight: bold; 
+  border: none; 
+  padding: 10px 20px; 
+}
+
+.second_card{
+width: 50%;
+height: 3pc;
+
+}
+.btn_cont{
+color: white;
+font-size: x-large;
+z-index: 999;
+}
+
+.btn_cont  img{
+  border: 1px solid white;
+  border-radius:30px;
+} 
+
+.main_sec_head {
+  font-size: x-large;
+  font-weight: 600;
+  color: #000080;
+  margin-top:1pc ;
+
+
+}
+.main_tittle{
+  font-size: 30px;
+  font-weight: bold;
+
+}
+.other_sec_title{
+  font-size: 40px;
+  font-weight:bolder;
+
+}
+
+.os_btn1 .btn_cont img {
+  opacity: 0;
+  filter: blur(5px); 
+  width: 0; 
+  transition: opacity 0.5s ease-in-out, filter 0.5s ease-in-out, width 0.5s ease-in-out; 
+  margin-left: 10px; 
+  overflow: hidden; 
+
+}
+
+
+.os_btn1 .btn_cont:hover img {
+  opacity: 1; 
+  filter: blur(0); 
+  width: 20px; 
+}
+.last_cont{
+  font-size: x-large;
+  font-weight: 700;
+padding-top: 5pc;
+}
+
+.last_cont_row{
+  padding-top: 3pc;
+  
+  
+}
+.top_left_sticky_images{
+  left: 0px;
+  top: 10pc;
+  background-color: transparent;
+  line-height: 30px;
+  position: fixed;
+  z-index: 1000; 
+}
+
+
+@media  (max-width:768px){
+  .top_left_sticky_images{
+    display: none;
+  }
+}
+
+
